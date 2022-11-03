@@ -92,12 +92,12 @@ text_file.close()
 # Plot
 n = range(len(dictshow))
 plt.bar(n, dictshow.values(), align='center')
-plt.xticks(n, dictshow.keys())
+plt.xticks(n, dictshow.keys(),fontsize=6)
 plt.title("Most frequent Words")
 plt.savefig("plot_MostFrequentWords_WTO_News.png", transparent=True)
 
 # Overview
-# len(dict2) :520; set length < 520
+# len(dict2) :501; set length < 501
 overview =  valueSelection(dictionary = dict2, length = 500, startindex = 0)
 nOverview = range(len(overview.keys()))
 plt.bar(nOverview, overview.values(), color = "g", tick_label = "")
