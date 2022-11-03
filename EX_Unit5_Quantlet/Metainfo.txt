@@ -1,11 +1,11 @@
-Name of Quantlet : EX_Unit5_Quantlet
-Published in : SDA_2022_St_Gallen
-Description : Demonstrating a basic image filter.
+Name of Quantlet : DEDA_StatisticsFinance - Homework
+Published in : Digital Economy and Decision Analytics
+Description : Homework No. 1 and No. 2. Fourier Transformation of two images using Nympy in Python
+
 Keywords :
 - Python
-- Teaching
+- Fourier Transformation
 - Numpy
-- Scipy
-- Matplotlib
-Author : Raul Bag
-
+- PNG
+- Implied Volatility
+Author : Josef Gitterle
