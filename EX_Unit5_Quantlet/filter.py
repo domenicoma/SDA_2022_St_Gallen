@@ -6,7 +6,7 @@ from numpy.fft import fft,ifft
 import numpy as np
 
 # Open the image by using Python Imaging Library(PIL)
-image_before=Image.open('data_center.jpg')
+image_before=Image.open('snake.png')
 # Decoding and encoding image to float number
 image_int=np.fromstring(image_before.tobytes(), dtype=np.int8)
 # Processing Fourier transform
