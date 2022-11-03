@@ -1,0 +1,9 @@
+Name of Quantlet : Unit5_Quantlet
+Published in : SDA_2022_St_Gallen
+Description : Demonstrating a basic image filter.
+Keywords :
+- Python
+- Numpy
+- Scipy
+- Matplotlib
+Author : Nobin Kachirayil
