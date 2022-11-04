@@ -58,7 +58,7 @@ labels_rbf = spectral_model_rbf.fit_predict(wine_norm)
 plt.scatter(X_principal['P1'], X_principal['P2'],  
            c = SpectralClustering(n_clusters = 2, affinity ='rbf') .fit_predict(X_principal), cmap =plt.cm.autumn) 
 plt.show() 
-plt.savefig("Spectral_Clustering_Wine.png")
+plt.savefig("SpectralClustering_Wine.png")
 # The spectral clustering does not show much distance between the two groups.
 
 
