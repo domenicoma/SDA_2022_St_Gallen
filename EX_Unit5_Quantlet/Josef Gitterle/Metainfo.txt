@@ -1,0 +1,11 @@
+Name of Quantlet : DEDA_StatisticsFinance - Homework
+Published in : Digital Economy and Decision Analytics
+Description : Homework No. 1 and No. 2. Fourier Transformation of two images using Nympy in Python
+
+Keywords :
+- Python
+- Fourier Transformation
+- Numpy
+- PNG
+- Implied Volatility
+Author : Josef Gitterle
