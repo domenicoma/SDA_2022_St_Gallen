@@ -1,0 +1,15 @@
+Name of Quantlet: 'Swiss Role'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Creating a picture of a swiss role with 300'000 sample size'
+
+Keywords: 'Swiss Role, Locally Linear Embeddings'
+
+Author: 'Domenico Maffei'
+
+Submitted: '04 November 2022'
+
+Input: 'Sample Size of 300'000 and number of components of 2'
+
+Output: 'Nice and slim swiss role without really seeing the actual observations.'
