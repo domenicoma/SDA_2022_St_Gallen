@@ -4,7 +4,7 @@ Published in: 'SDA_2022_St_Gallen'
 
 Description: 'Creating a filter using Fourier Transformation for a picture of St Gallen'
 
-Keywords: 'Fourier Transformation, Filter, Picture, Fourier, Frankfurt'
+Keywords: 'Fourier Transformation, Filter, Picture, Fourier, St Gallen'
 
 Author: 'Wen En Lim'
 
