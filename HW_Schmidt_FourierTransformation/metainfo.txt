@@ -1,0 +1,16 @@
+Name of Quantlet: 'Filter_PictureFrankfurt'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Creating a filter using Fourier Transformation for a picture of the station Konstablerwache in Frankfurt'
+
+Keywords: 'Fourier Transformation, Filter, Picture, Fourier, Frankfurt'
+
+Author: 'Alina Schmidt'
+
+Submitted: '03 November 2022'
+
+Input: 'Konstablerwache_before.jpg'
+
+Output: 'Konstablerwache_after.jpg'
+
