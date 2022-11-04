@@ -1,0 +1,15 @@
+Name of Quantlet: 'Swiss Role'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Building a Swiss Role with 300'000 observations.'
+
+Keywords: 'LLE, Swiss Role'
+
+Author: 'Domenico Maffei'
+
+Submitted: '04 November 2022'
+
+Input: '300'000 observations with 2 components.'
+
+Output: 'Fine Swiss Role.'
