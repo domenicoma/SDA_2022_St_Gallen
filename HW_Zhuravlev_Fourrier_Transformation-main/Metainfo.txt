@@ -1,6 +1,6 @@
 
 
-Name of Quantlet: '2_Filter_Pictures'
+Name of Quantlet: '2_Filter_Pictures_FT'
 
 Published in: 'SDA_2022_St_Gallen'
 
