@@ -1,15 +1,15 @@
-Name of Quantlet: 'Retro Laufenburg Picture'
+Name of Quantlet: "Retro Laufenburg Picture"
 
-Published in: 'SDA_2022_St_Gallen'
+Published in: "SDA_2022_St_Gallen"
 
-Description: 'Creating a (retro) filter using Fourier Transformation for a picture of Laufenburg (Baden) old town'
+Description: "Creating a (retro) filter using Fourier Transformation for a picture of Laufenburg (Baden) old town"
 
-Keywords: 'Fourier Transformation, Filter, Picture, Fourier, Retro, Laufenburg'
+Keywords: "Fourier Transformation, Filter, Picture, Fourier, Retro, Laufenburg"
 
-Author: 'Domenico Maffei'
+Author: "Domenico Maffei"
 
-Submitted: '04 November 2022'
+Submitted: "04 November 2022"
 
-Input: 'Laufenburg.png'
+Input: "Laufenburg.png"
 
-Output: 'Laufenburg_retro.png'
+Output: "Laufenburg_retro.png"
