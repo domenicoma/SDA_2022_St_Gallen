@@ -1,0 +1,9 @@
+Name of Quantlet : StatisticsFinance_Unit5
+Published in : SDA_2022_St_Gallen
+Description : Creating a filter using Fourier Transformation for a picture of St Gallen
+Keywords :
+- Fourier Transformation
+- Filter
+- Picture
+- St Gallen
+Author : Wen En Lim
