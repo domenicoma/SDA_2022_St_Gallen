@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov  4 09:43:13 2022
+
+@author: domenicomaffei
+"""
+
+%matplotlib inline
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from sklearn import manifold, datasets
+
+
+X, color = datasets.make_swiss_roll(n_samples=300000)
+
+# PCA on 2-dimensions
+pca = PCA(n_components=2, random_state=123)
+pca.fit(X)
+pca_X = pca.transform(X)
+
+# Plot data with dimensionality reduction PCA
+fig = plt.figure(figsize=(10, 10))
+plt.scatter(pca_X[:,0], pca_X[:,1], c=color, marker='o', cmap=plt.cm.Spectral)
+
+plt.xlabel('Component 1')
+plt.ylabel('Component 2')
+plt.title('Reduced to 2D using PCA')
+
+plt.savefig('./pca_reduce.png', transparent=True)
