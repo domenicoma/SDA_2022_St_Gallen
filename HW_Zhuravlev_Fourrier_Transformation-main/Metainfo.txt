@@ -1,0 +1,17 @@
+
+
+Name of Quantlet: 'FT_Filters_Zhuravlev_HW1'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Creating filters using Fourier Transformation for two pictures, one of a mountain and another one of a famous beach in Croatia'
+
+Keywords: 'SDA 2022, Fourier Transformation, Picture, Croatia, Switzerland, Mountains, Beaches'
+
+Author: 'Vasily Zhuravlev'
+
+Submitted: '04 November 2022'
+
+Input: 'dentsdumidi_avant.jpg', 'zlatni_rat_do.jpg'
+
+Output: 'dentsdumidi_apres.jpg', 'zlatni_rat_posle_9e5','zlatni_rat_posle_9e6'
