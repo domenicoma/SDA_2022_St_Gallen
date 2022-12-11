@@ -49,7 +49,7 @@ from hmmlearn import hmm
 # due to the inner merge, only observations for trading days of SP500 
 # are considered, as these data set is also used for later analyses.
 
-data = pd.read_csv("BTC_merged.csv", index_col=0)
+data = pd.read_csv("Data/BTC_merged.csv", index_col=0)
 
 # Merge descriptive statistics of both returns
 descr_stat = round(data['BTC Returns'].describe(),4)
@@ -67,7 +67,7 @@ plt.title('Descriptive Statistics of Log-Returns Time Series')
 tab = table(ax, descr_stat, loc='upper right', colWidths=[0.4]*len(descr_stat.columns))  
 tab.auto_set_font_size(False) 
 tab.set_fontsize(10) 
-plt.savefig('Returns_Described.png')
+plt.savefig('Plots/Returns_Described.png')
 
 
 # 2) Correlation S&P500 Log Returns and BTC Log Returns
@@ -80,7 +80,7 @@ sns.regplot(x=data['BTC Returns'], y=data['SP500 Returns'],
 plt.title('Log Returns of Bitcoin against S&P500 Log Returns', fontsize=14)
 plt.xlabel('BTC Log Returns', fontsize=14)
 plt.ylabel('S&P500 Log Returns', fontsize=14)
-plt.savefig('Scatterplot BTC and S&P500 returns.png', transparent=True)
+plt.savefig('Plots/Scatterplot BTC and S&P500 returns.png', transparent=True)
 
 # Compute Pearson's correlation coefficient for S&P 500 returns and BTC Returns
 correlation,_ = pearsonr(data['BTC Returns'], data['SP500 Returns'])
@@ -94,7 +94,7 @@ print('Pearsons correlation: %.3f' % correlation)
 # Use for the plots the complete BTC time series available to compare it better
 # to the sentiment plots that will be created in the next script.
 
-data_BTC = pd.read_csv('BTC_Daily.csv', index_col=0) 
+data_BTC = pd.read_csv('Data/BTC_Daily.csv', index_col=0) 
 
 def ts_plot(data, column,title,label,col,filename):
     data.index = pd.to_datetime(data.index)
@@ -108,17 +108,17 @@ def ts_plot(data, column,title,label,col,filename):
     plt.savefig(filename, transparent=True)
 
 ts_plot(data_BTC, 6,'Bitcoin', 'Log Returns','navy',
-        'Bitcoin_Return_Timeseries.png')
+        'Plots/Bitcoin_Return_Timeseries.png')
 
 ts_plot(data, 7,'S&P 500', 'Log Returns','darkred',
-        'SP500_Return_Timeseries.png')
+        'Plots/SP500_Return_Timeseries.png')
 
 # Plot time series of BTC closing prices and BTC Volume
 ts_plot(data_BTC, 3, 'Btcoin', 'Closing Price', 'navy',
-        'Bitcoin_Closing_Timeseries.png')
+        'Plots/Bitcoin_Closing_Timeseries.png')
 
 ts_plot(data_BTC, 5, 'Bitcoin', 'Volume', 'navy',
-        'Bitcoin_Volume_Timeseries.png')
+        'Plots/Bitcoin_Volume_Timeseries.png')
 
 
 
@@ -157,7 +157,7 @@ fig, axes = plt.subplots(1,2,figsize=(16,6))
 plt.suptitle("BTC Log-Returns", size=16)
 plot_acf(data['BTC Returns'].tolist(), lags=50, ax=axes[0])
 plot_pacf(data['BTC Returns'].tolist(), lags=50, ax=axes[1])
-plt.savefig('BTC_ACF_PACF.png', transparent=True)
+plt.savefig('Plots/BTC_ACF_PACF.png', transparent=True)
 # As expected, no significant serial correlation pattern can be detected.
 
 
@@ -165,12 +165,12 @@ plt.savefig('BTC_ACF_PACF.png', transparent=True)
 # 6) Have a look at Reddit sentiments
 
 # Have a look at the sentiment scores VADER and ROBERTA:
-sentim20 = pd.read_csv('VADER_ROBERTA_raw_Results_2020_01_01__2020_12_31.csv')
-sentim21_1 = pd.read_csv('VADER_ROBERTA_raw_Results_2021_01_01__2021_02_04.csv')
-sentim21_2 = pd.read_csv('VADER_ROBERTA_raw_Results_2021_02_07__2021_05_31.csv')
-sentim21_3 = pd.read_csv('VADER_ROBERTA_raw_Results_2021_06_01__2021_12_31.csv')
-sentim22_1 = pd.read_csv('VADER_ROBERTA_raw_Results_2022_01_01__2022_10_31.csv')
-sentim22_2 = pd.read_csv('VADER_ROBERTA_raw_Results_2022_11_01__2022_11_19.csv')
+sentim20 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2020_01_01__2020_12_31.csv')
+sentim21_1 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2021_01_01__2021_02_04.csv')
+sentim21_2 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2021_02_07__2021_05_31.csv')
+sentim21_3 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2021_06_01__2021_12_31.csv')
+sentim22_1 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2022_01_01__2022_10_31.csv')
+sentim22_2 = pd.read_csv('Data/VADER_ROBERTA_raw_Results_2022_11_01__2022_11_19.csv')
 
 sentim = sentim20.append([sentim21_1,sentim21_2,sentim21_3,sentim22_1,sentim22_2])
 del(sentim20,sentim21_1,sentim21_2,sentim21_3,sentim22_1,sentim22_2)
@@ -205,7 +205,7 @@ plt.stackplot(vader_count.index,vader_count['-1'], vader_count['0'],
               colors=['darkred','orange','green'])
 plt.ylabel('Daily count of comments with respective sentiment', fontsize=13)
 plt.legend(bbox_to_anchor =(0.5,-0.15),loc='lower center', ncol=3)
-plt.savefig('VADER Sentiment Count across time.png', transparent=True)
+plt.savefig('Plots/VADER Sentiment Count across time.png', transparent=True)
 
 
 plt.figure(figsize=(10, 6))
@@ -215,7 +215,7 @@ plt.stackplot(roberta_count.index,roberta_count['-1'], roberta_count['1'],
               colors=['darkred','green'])
 plt.ylabel('Daily count of comments with respective sentiment', fontsize=13)
 plt.legend(bbox_to_anchor =(0.5,-0.15),loc='lower center', ncol=2)
-plt.savefig('ROBERTA Sentiment Count across time.png', transparent=True)
+plt.savefig('Plots/ROBERTA Sentiment Count across time.png', transparent=True)
 
 
 
@@ -237,7 +237,7 @@ plt.title('Descriptive Statistics of Daily aggregated Sentiment scores')
 tab = table(ax, descr_stat, loc='upper right', colWidths=[0.4]*len(descr_stat.columns))  
 tab.auto_set_font_size(False) 
 tab.set_fontsize(10) 
-plt.savefig('Sentiment_Described.png')
+plt.savefig('Plots/Sentiment_Described.png')
 
 
 
@@ -255,4 +255,4 @@ wordcloud = WordCloud(stopwords=set(STOPWORDS),max_words=10000,
 # Generate plot
 plt.imshow(wordcloud)
 plt.axis("off")
-plt.savefig('Wordcloud_Reddit_Titles.png')
+plt.savefig('Plots/Wordcloud_Reddit_Titles.png')
