@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 16 17:47:04 2022
-
-@author: Alina Schmidt
 
 Do RoBERTa and VADER sentiment models on r/Bitcoin help to explain Bitcoin retuns?
 
@@ -29,7 +26,6 @@ from scipy.stats import pearsonr
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS
 
-from hmmlearn import hmm
 
 
 # 1) Create a table with descriptive statistics of log returns
