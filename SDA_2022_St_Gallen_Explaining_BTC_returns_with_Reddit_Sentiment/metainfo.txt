@@ -10,6 +10,6 @@ Author: 'Josef Gitterle, Nobin Kachirayil, Andreas Karlsson, Alina Schmidt'
 
 Submitted: '11 December 2022'
 
-Input: 'Daily historical Bitcoin and S&P500 log returns, Daily aggregated VADER and RoBERTa scores based on Reddit Titles from 02-01-2020 until 18-11-2022.'
+Input: 'Daily historical Bitcoin and S&P500 log returns, Daily aggregated VADER and RoBERTa scores based on previously web-scraped raw Reddit Titles from 01-01-2020 until 19-11-2022.'
 
-Output: 'Fitted log returns of BTC resulting from OLS and from Random Forest models'
+Output: 'Fitted log returns of BTC resulting from OLS and from Random Forest models as well as descriptive statistics of Sentiment and BTC returns'
