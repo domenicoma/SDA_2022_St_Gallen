@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov  7 18:01:23 2022
 
 Project SDA: 
 Do RoBERTa and VADER sentiment models on r/Bitcoin help to explain Bitcoin retuns?
 
 Part 3 - BTC  and S&P500 data preprocessing
 
-@author: Alina Schmidt
 """
 
 
