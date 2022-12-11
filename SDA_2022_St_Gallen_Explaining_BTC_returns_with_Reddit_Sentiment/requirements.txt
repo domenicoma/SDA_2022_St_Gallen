@@ -1,0 +1,17 @@
+pandas
+numpy
+praw
+pmaw
+nltk
+tqdm
+transformers
+scipy
+yfinance
+seaborn
+statsmodels
+matplotlib
+sklearn
+PIL
+wordcloud
+hmmlearn
+graphviz
