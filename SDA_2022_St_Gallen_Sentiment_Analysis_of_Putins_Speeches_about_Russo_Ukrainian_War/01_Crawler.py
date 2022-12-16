@@ -7,7 +7,6 @@ Created on Sat Nov  5 15:16:17 2022
 """
 #%% All the relevant Libraries
 
-# For the missing libraries use: pip install
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
