@@ -5,7 +5,7 @@
 ```yaml
 
 
-Name of Quantlet: 'Sentiment Analysis of Russian Speeches about Russo-Ukrainian War' 
+Name of Quantlet: 'Sentiment Analysis of Putins Speeches about Russo-Ukrainian War' 
 
 Published in: 'SDA_2022'
 
