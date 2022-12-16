@@ -1,0 +1,16 @@
+Name of Quantlet: 'filter'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Creating a filter using Fourier Transformation for a picture of a snake or data center'
+
+Keywords: 'Fourier Transformation, Filter, Picture, Fourier, Snake, Data Center'
+
+Author: 'Raul Bag'
+
+Submitted: '03 November 2022'
+
+Input: 'snake.png'
+
+Output: 'snake.png'
+

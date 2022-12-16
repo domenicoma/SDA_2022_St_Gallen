@@ -1,0 +1,15 @@
+Name of Quantlet: 'SDA_2022_St_Gallen_Homework1'
+
+Published in: 'SDA_2022_St_Gallen'
+
+Description: 'Demonstrating a basic image filter using Fourier Transformation'
+
+Keywords: 
+- 'Python'
+- 'Numpy'
+- 'Scipy'
+- 'Matplotlib'
+
+Author: 'Valerie Lai'
+
+Submitted: '04 November 2022'
